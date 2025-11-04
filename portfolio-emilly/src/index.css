@@ -3,6 +3,7 @@
 @theme {
     --color-pink: #FD4FA6;
     --color-bg: #181818;
+    --color-body: #EDE8E5;
     --font-sans: 'Poppins', sans-serif;
 }
 
@@ -12,14 +13,54 @@
     box-sizing: border-box;
 }
 
+
 body {
-    @apply font-sans bg-bg text-white;
+    @apply font-sans bg-bg text-body;
 }
 
 h1 {
-    @apply text-2xl font-bold;
+    @apply text-3xl font-bold;
 }
 
 h2 {
-    @apply text-xl font-semibold;
+    @apply text-2xl font-semibold;
+}
+
+button {
+    @apply cursor-pointer;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@layer utilities {
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
 }

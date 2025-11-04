@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+    --color-pink: #FD4FA6;
+    --color-bg: #181818;
+    --font-sans: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @apply font-sans bg-bg text-white;
+}
+
+h1 {
+    @apply text-2xl font-bold;
+}
+
+h2 {
+    @apply text-xl font-semibold;
+}

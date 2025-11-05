@@ -30,6 +30,13 @@ button {
     @apply cursor-pointer;
 }
 
+@layer components {
+    .social-media {
+        @apply text-2xl rounded-full border border-pink p-2! w-12 h-12 transform duration-300 ease-in-out hover:text-bg hover:bg-pink hover:-translate-y-1.5;
+    }
+}
+
+
 @keyframes float {
 
     0%,
@@ -38,7 +45,7 @@ button {
     }
 
     50% {
-        transform: translateY(-15px);
+        transform: translateY(-20px);
     }
 }
 
@@ -63,4 +70,17 @@ button {
 
 .animate-fadeIn {
     animation: fadeIn 0.8s ease-out forwards;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-bg;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-pink rounded-lg;
 }

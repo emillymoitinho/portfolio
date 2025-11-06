@@ -41,7 +41,7 @@ button {
     }
 
     .container {
-        @apply flex flex-col items-center py-20! max-w-[80%] gap-10;
+        @apply flex flex-col items-center my-20!  md:my-20! max-w-[80%] gap-10;
     }
 }
 

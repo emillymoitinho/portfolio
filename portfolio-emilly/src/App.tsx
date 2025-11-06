@@ -40,13 +40,13 @@ function App() {
 
   return (
     <div className="bg-bg flex flex-col items-center w-full h-full">
-      <nav className="fixed bg-bg z-9 flex items-center justify-between py-8! px-15! w-full">
+      <nav className="fixed bg-bg z-9 flex items-center justify-between p-8! md:py-8! md:px-15! w-full">
 
-        <p className="text-2xl font-bold hover:scale-110 transition duration-300 ease-in-out">
+        <p className="md:text-2xl font-bold hover:scale-110 transition duration-300 ease-in-out">
           <a href="#">Emilly<span className="text-pink">Moitinho</span></a>
         </p>
 
-        <ul className="flex justify-end gap-10">
+        <ul className="hidden md:flex justify-end gap-10">
           {menuItems.map((item) => (
             <li key={item.name}>
               <a
@@ -67,18 +67,18 @@ function App() {
       </nav>
 
       <section className="container relative">
-        <main id='inicio' className="flex items-center animate-fadeIn h-[90vh]">
-          <div className="flex flex-col w-[30%] flex-2 px-5!">
+        <main id='inicio' className="flex md:flex-row flex-col md:flex items-center animate-fadeIn mt-10! md:mt-0 md:h-[90vh]">
+          <div className="flex flex-col  md:w-[30%] flex-2 md:px-5!">
             <h2 className="mb-2! text-xl! font-extralight!">Hello, World! Eu sou</h2>
-            <h1 className="text-5xl! text-pink mb-8!">Emilly Moitinho</h1>
-            <div className="flex flex-col mb-4! w-[70%] gap-3">
+            <h1 className="md:text-5xl! text-pink mb-8!">Emilly Moitinho</h1>
+            <div className="flex flex-col mb-4! md:w-[70%] gap-3">
               {/* <p className="w-150">Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> e também de <strong>Engenharia da Computação</strong>.
               </p> */}
               <p>Tenho me dedicado ao <strong className='text-pink'>Desenvolvimento Front-End</strong> e gosto transformar ideias em sites bonitos e funcionais.</p>
               <p>Estou sempre aprendendo novas tecnologias e buscando evoluir a cada projeto que faço.</p>
             </div>
 
-            <div className='flex items-center justify-between gap-8 mt-4! w-fit'>
+            <div className='flex flex-col items-center justify-between gap-8 mt-4! w-fit'>
               <div className="flex gap-6 text-pink">
                 <a href="https://www.linkedin.com/in/emillymoitinho/" target="_blank" title="Linkedin" className="social-media"><FontAwesomeIcon icon={faLinkedin} /></a>
                 <a href="https://github.com/emillymoitinho" target="_blank" className="social-media" title="Github"><FontAwesomeIcon icon={faGithub} /></a>
@@ -90,7 +90,7 @@ function App() {
 
           </div>
 
-          <div className="flex-1"><img src={user} alt="Foto de Emilly Moitinho" className=" rounded-full shadow-[0_0_25px_#FD4FA6] animate-float transition duration-500 ease-in-out hover:shadow-[0_0_45px_#FD4FA6] hover:scale-105" /></div>
+          <div className="hidden md:flex flex-1"><img src={user} alt="Foto de Emilly Moitinho" className=" rounded-full shadow-[0_0_25px_#FD4FA6] animate-float transition duration-500 ease-in-out hover:shadow-[0_0_45px_#FD4FA6] hover:scale-105" /></div>
         </main>
         {/* 
         <article id="sobre" className="section-content w-[70vw] h-150 flex flex-col gap-4 p-8! border-3 border-pink shadow-[1px_0px_59px_-25px_#f599c7f7]
@@ -101,7 +101,7 @@ function App() {
           <div></div>
         </article> */}
 
-        <article id='skills' className="w-full flex justify-center flex-col gap-8 py-40! h-screen">
+        <article id='skills' className="w-full flex justify-center flex-col gap-8 py-5! md:py-40! md:h-screen">
           <h2 className="text-3xl! mb-4! font-bold" style={{ textShadow: "rgb(253 79 166 / 66%) 5px 5px 18px" }}>Ferramentas e Tecnologias</h2>
 
           <div className="flex flex-wrap gap-8">
@@ -117,7 +117,7 @@ function App() {
           </div>
         </article>
 
-        <article id='projetos' className=' w-full flex flex-col items-center gap-8 py-30!'>
+        <article id='projetos' className=' w-full flex flex-col items-center gap-8 md:py-30!'>
           <h2 className='text-4xl!' style={{ textShadow: "rgb(253 79 166 / 66%) 5px 5px 18px" }}>Projetos</h2>
           <p className='mb-6!'>Confira alguns dos projetos que desenvolvi que mostram minha evolução no desenvolvimento web.</p>
 

@@ -24,7 +24,7 @@ function getTechColor(tag: string): string {
 
 function CardProject({ img, alt, title, description, tags = [], linkProject, github }: CardProjectProps) {
     return (
-        <div className="max-w-[400px] flex-1 flex flex-col rounded-2xl overflow-hidden border  border-[#d8d4d325]">
+        <div className="max-w-[400px] min-w-[200px] flex-1 flex flex-col rounded-2xl overflow-hidden border  border-[#d8d4d325]">
             <img src={img} alt={alt} className="h-[200px] object-cover"/>
             <div className="h-full flex justify-between flex-col gap-4 p-5! shadow-2xl">
                 <h4 className="text-xl font-bold">{title}</h4>

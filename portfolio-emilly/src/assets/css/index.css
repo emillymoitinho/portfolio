@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html {
+    @apply scroll-smooth;
+}
+
 
 body {
     @apply font-sans bg-bg text-body;
@@ -32,7 +36,11 @@ button {
 
 @layer components {
     .social-media {
-        @apply text-2xl rounded-full border border-pink p-2! w-12 h-12 transform duration-300 ease-in-out hover:text-bg hover:bg-pink hover:-translate-y-1.5;
+        @apply flex items-center justify-center text-2xl rounded-full border border-pink p-2 w-12 h-12 transform duration-300 ease-in-out hover:text-bg hover:bg-pink hover:-translate-y-1.5 hover:shadow-[0_0_25px_#b74b4b];
+    }
+
+    .container {
+        @apply flex flex-col items-center max-w-[80%] gap-20;
     }
 }
 

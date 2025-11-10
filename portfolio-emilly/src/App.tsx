@@ -19,6 +19,7 @@ import GitHubIcon from './components/SvgIcons/GitHubIcon';
 import CardProject from './components/CardProject/CardProject';
 import fitclub from './assets/images/fitclub.png';
 import emillyMakeup from './assets/images/emillyMakeup.png';
+import medicenter from './assets/images/medicenter.png';
 
 function App() {
   const [active, setActive] = useState("Início");
@@ -139,6 +140,15 @@ function App() {
               tags={["HTML", "CSS"]}
               linkProject='https://emillymoitinho.github.io/emillymakeup_login/'
               github='https://github.com/emillymoitinho/emillymakeup_login' />
+
+            <CardProject
+              title='MediCenter🏥'
+              img={medicenter}
+              alt='Imagem do Projeto MediCenter'
+              description='Medicenter é um site responsivo de clínica médica com informações sobre serviços, horários e atendimentos.'
+              linkProject='https://emillymoitinho.github.io/b7web-projects/medicenter/index.html'
+              github='https://github.com/emillymoitinho/b7web-projects?tab=readme-ov-file'
+            />
 
             <CardProject
               title='Em breve ✨'

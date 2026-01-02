@@ -20,6 +20,7 @@ import CardProject from './components/CardProject/CardProject';
 import fitclub from './assets/images/fitclub.png';
 import emillyMakeup from './assets/images/emillyMakeup.png';
 import medicenter from './assets/images/medicenter.png';
+import emybeauty from './assets/images/emybeuaty.png';
 
 function App() {
   const [active, setActive] = useState("Início");
@@ -35,7 +36,7 @@ function App() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // Rola suavemente
+      behavior: 'smooth' 
     });
   };
 
@@ -136,7 +137,7 @@ function App() {
               title='EmillyMakeup💄'
               img={emillyMakeup}
               alt='Imagem do Projeto FitClub'
-              description='Página de login responsiva do projeto EmillyMakeup, desenvolvida para uma plataforma de maquiagens, garantindo uma experiência perfeita em qualquer dispositivo (de celulares a computadores.)'
+              description='Página de login responsiva do projeto EmillyMakeup, desenvolvida para uma plataforma de maquiagens, garantindo uma experiência perfeita em qualquer dispositivo.'
               tags={["HTML", "CSS"]}
               linkProject='https://emillymoitinho.github.io/emillymakeup_login/'
               github='https://github.com/emillymoitinho/emillymakeup_login' />
@@ -151,12 +152,12 @@ function App() {
             />
 
             <CardProject
-              title='Em breve ✨'
-              img='https://placehold.co/200x200?text=Em+Breve'
+              title='Emy Beauty💆🏻‍♀️'
+              img={emybeauty}
               alt='Imagem de projeto futuro'
-              description='Novos projetos serão adicionados em breve!'
-              linkProject='#'
-              github='#'
+              description='Emy Beauty é um site responsivo de beleza voltado para skincare, maquiagem e tratamentos faciais, com navegação moderna e visual delicado, focado na experiência do usuário e no autocuidado.'
+              linkProject='https://emillymoitinho.github.io/b7web-projects/landing-page-beauty/'
+              github='https://github.com/emillymoitinho/b7web-projects'
             />
           </div>
         </article>
